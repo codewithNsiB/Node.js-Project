@@ -5,9 +5,9 @@ const {
   abortLaunchById,
 } = require('../../models/launches.model');
 
-// const {
-//   getPagination,
-// } = require('../../services/query');
+const {
+  getPagination,
+ } = require('../../services/query');
 
 async function httpGetAllLaunches(req, res) {
   const { skip, limit } = getPagination(req.query);

@@ -5,7 +5,7 @@ const morgan = require('morgan')
 const api = require('./routes/api')
 
 
-const app= express()
+const app = express()
 
 app.use(cors(
     {
