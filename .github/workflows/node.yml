@@ -1,16 +1,16 @@
 name: NASA Project CI
-on: 
+on:
 push:
-branches:  -master 
+  branches: [master]
 pull_request:
-branches:  -master 
+branches: [master]
 jobs:
 build:
 runs-on: ubuntu-latest
 steps:
-- uses: actions/checkout@v2
-- uses: actions/setup-node@V2
+  - uses: actions/checkout@v2
+  - uses: actions/setup-node@V2
 with:
-node-version: '16'
+node-version: "16"
 -run: npm install
 # -run: npm build --prefix client
