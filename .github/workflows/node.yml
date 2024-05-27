@@ -24,5 +24,6 @@ jobs:
         uses: supercharge/mongodb-github-action@1.6.0
         with:
           mongodb-version: ${{ matrix.mongodb-version }}
-      - run: npm ci
-      - run: npm test -- --runInBand
+      - run: npm install
+      - run: npm test
+      
